@@ -81,7 +81,7 @@ function clicar(id){
 			clearInterval(stopTimer)
 			//$('#playAgainButton').show(); //s'ha de crear un botó playAgainButton
 			document.getElementById("myLifeBar").src="src/-3heart.png";
-			return window.location.assign('tips.html') //torna a començar
+			return window.location.assign('perdut.html') //torna a començar
 		}
 	}
 }
