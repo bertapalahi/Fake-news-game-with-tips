@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>Ajuda</title>
+	<style>
+		@font-face{
+			font-family:'font2';
+			src: url(fonts/font3.ttf);
+		}
+		@font-face{
+			font-family:'font1';
+			src: url(fonts/font1.ttf);
+		}
+		.myDiv {
+		  text-align: center;
+		  margin-top: 5px;
+		  display: none;
+		}
+
+		.myDiv img{
+			width: 400px;
+		}
+
+		.toggle {
+			display: block;
+			padding: 1rem;
+			margin: 0 350px;
+			width: 35rem;
+			color: #6581b7;
+			background: white;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 2px;
+		}
+
+		.toggle:hover{
+			cursor: pointer;
+			box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+			transition: transform 150ms;
+			transform: scale(1.03);
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body bgcolor=whitesmoke text=whitesmoke>
+	<h1>Consells</h1>
+
+	<button class="toggle" onclick="myFunction('enllaç')">Fixa't bé en l'enllaç </button>
+	<div class="myDiv" id="enllaç" style="display:none"> <img src="src/punt1.png"> </div>
+
+	<button class="toggle" onclick="myFunction('titular')">El titular de la notícia és escandalós?</button>
+	<div class="myDiv" id="titular" style="display:none"> <img src="src/punt2.png"></div>
+	
+	<button class="toggle" onclick="myFunction('contingut')">Per a què han creat aquest contingut?</button>
+	<div class="myDiv" id="contingut" style="display:none"> <img src="src/punt3.png"> </div>
+
+	<button class="toggle" onclick="myFunction('imatge')">La imatge és realista?</button>
+	<div class="myDiv" id="imatge" style="display:none"> <img src="src/punt4.png"></div>
+
+	<button class="toggle" onclick="myFunction('autor')">Indica l'autor de la notícia? És conegut?</button>
+	<div class="myDiv" id="autor" style="display:none"> <img src="src/punt5.png"></div>
+
+	<button class="toggle" onclick="myFunction('llenguatge')">El llenguatge és professional?</button>
+	<div class="myDiv" id="llenguatge" style="display:none"> <img src="src/punt6.png">	</div>
+
+	<div id="home" class="flex-column flex-center">
+		<a href="start.html" class="btn">Juga</a>
+	</div>
+
+
+<script>
+	
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+</body>
+</html>
